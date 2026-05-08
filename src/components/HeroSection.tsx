@@ -1,7 +1,7 @@
 import AnimatedHeading from './AnimatedHeading';
 import FadeIn from './FadeIn';
 
-const VIDEO_URL = '/hero.mp4';
+const VIDEO_URL = `${import.meta.env.BASE_URL}hero.mp4`;
 
 export default function HeroSection() {
   return (
