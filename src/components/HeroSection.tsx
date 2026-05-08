@@ -9,12 +9,14 @@ export default function HeroSection() {
       {/* Background video — no overlay */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src={VIDEO_URL}
         autoPlay
         loop
         muted
         playsInline
-      />
+        preload="auto"
+      >
+        <source src={VIDEO_URL} type="video/mp4" />
+      </video>
 
       {/* Content pinned to bottom */}
       <div className="px-6 md:px-12 lg:px-16 flex flex-col flex-1 justify-end pb-12 lg:pb-16 relative z-10 lg:grid lg:grid-cols-2 lg:items-end">
